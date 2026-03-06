@@ -30,7 +30,7 @@ jobs:
     - name: Build wheel
       run: python -m build -w
     - name: Store artifacts
-      uses: actions/upload-artifacts@v4
+      uses: actions/upload-artifact@v4
       with:
         name: calculator
         path: dist/
